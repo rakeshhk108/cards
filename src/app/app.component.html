@@ -1,0 +1,30 @@
+
+<!-- we have hard coded it we have to ngIf -->
+
+<!-- <app-card 
+[title]="post[0].title"
+[ImageUrl]="post[0].ImageUrl"
+[userName]="post[0].userName"
+[content]="post[0].content"></app-card>
+
+<app-card
+[title]="post[1].title"
+[ImageUrl]="post[1].ImageUrl"
+[userName]="post[1].userName"
+[content]="post[1].content"></app-card>
+
+<app-card
+[title]="post[2].title"
+[ImageUrl]="post[2].ImageUrl"
+[userName]="post[2].userName"
+[content]="post[2].content"></app-card> -->
+
+
+<app-card
+*ngFor="let post of posts"
+[title]="post.title"
+[ImageUrl]="post.ImageUrl"
+[userName]="post.userName"
+[content]="post.content"
+
+></app-card>
